@@ -5,7 +5,6 @@ import uvicorn
 
 app = FastAPI(title="Análise de Sentimento API", version="1.0.0")
 
-# Inicializar o modelo (pode demorar na primeira execução)
 try:
     sentiment_analyzer = pipeline(
         "sentiment-analysis", 
